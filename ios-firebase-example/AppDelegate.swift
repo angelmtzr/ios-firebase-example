@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  ios-firebase-example
-//
-//  Created by Alumno on 28/09/22.
-//
-
 import UIKit
 
 @main

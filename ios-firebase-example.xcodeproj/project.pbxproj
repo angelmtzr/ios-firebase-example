@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B56D1D629109E62006AF139 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B56D1D529109E62006AF139 /* HomeViewController.swift */; };
 		FBF50D2A28E52B310013970B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF50D2928E52B310013970B /* AppDelegate.swift */; };
 		FBF50D2C28E52B310013970B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF50D2B28E52B310013970B /* SceneDelegate.swift */; };
 		FBF50D2E28E52B310013970B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF50D2D28E52B310013970B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B56D1D529109E62006AF139 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FBF50D2628E52B310013970B /* ios-firebase-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-firebase-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF50D2928E52B310013970B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF50D2B28E52B310013970B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				FBF50D2928E52B310013970B /* AppDelegate.swift */,
 				FBF50D2B28E52B310013970B /* SceneDelegate.swift */,
 				FBF50D2D28E52B310013970B /* ViewController.swift */,
+				0B56D1D529109E62006AF139 /* HomeViewController.swift */,
 				FBF50D2F28E52B310013970B /* Main.storyboard */,
 				FBF50D3228E52B330013970B /* Assets.xcassets */,
 				FBF50D3428E52B330013970B /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				FBF50D2E28E52B310013970B /* ViewController.swift in Sources */,
 				FBF50D2A28E52B310013970B /* AppDelegate.swift in Sources */,
 				FBF50D2C28E52B310013970B /* SceneDelegate.swift in Sources */,
+				0B56D1D629109E62006AF139 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
