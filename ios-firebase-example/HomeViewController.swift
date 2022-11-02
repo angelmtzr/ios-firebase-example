@@ -9,5 +9,4 @@ class HomeViewController: UIViewController {
         label.text = text
     }
     
-
 }

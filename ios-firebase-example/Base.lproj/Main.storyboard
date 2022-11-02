@@ -64,8 +64,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                         <connections>
-                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EvM-8F-0tQ"/>
-                                            <segue destination="O63-ry-QwZ" kind="show" identifier="login" id="b3v-OV-mWM"/>
+                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AU4-XF-7cP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBw-4d-dsF">
@@ -89,10 +88,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="g52-vP-dnf"/>
+                    <connections>
+                        <segue destination="O63-ry-QwZ" kind="show" identifier="login" id="bdh-hw-S7c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36.92307692307692" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="9" y="4"/>
         </scene>
         <!--SignUpView-->
         <scene sceneID="sWJ-42-HAi">
@@ -119,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helloooo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8T5-mb-TQK">
-                                <rect key="frame" x="161" y="412" width="68" height="21"/>
+                                <rect key="frame" x="161" y="411.66666666666669" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -134,12 +136,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="Ur1-mV-5pW"/>
                     <connections>
-                        <outlet property="label" destination="8T5-mb-TQK" id="IaY-gC-LCq"/>
+                        <outlet property="label" destination="8T5-mb-TQK" id="8yv-6x-TYW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aT-HV-WPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37" y="717"/>
+            <point key="canvasLocation" x="8" y="704"/>
         </scene>
     </scenes>
     <resources>
