@@ -34,11 +34,13 @@ class SignUpViewController: UIViewController {
     }
     
     private func didCreateUser(_ user: User) {
-        self.ref.child("users").child(user.uid)
-            .setValue(["name": name.text!,
+        let newUser = ["name": name.text!,
                        "lastname": lastname.text!,
                        "major": major.text!,
-                       "semester": semester.text!])
+                       "semester": semester.text!]
+        
+        self.ref.child("users").child(user.uid).setValue(newUser)
+        
         let alert = UIAlertController(title: "Success",
                                       message: "Signed up successfully.\n" +
                                       "\(user.email!)",

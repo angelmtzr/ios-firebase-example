@@ -210,14 +210,63 @@
         <!--Edit Profile-->
         <scene sceneID="Aiv-oB-PdB">
             <objects>
-                <viewController id="dhm-im-cUP" sceneMemberID="viewController">
+                <viewController id="dhm-im-cUP" customClass="EditProfileViewController" customModule="ios_firebase_example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qVR-XL-SK8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G8o-nb-5uB">
+                                <rect key="frame" x="50" y="194" width="275" height="323"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOJ-Kh-FWQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="56.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lastname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MY2-25-IPF">
+                                        <rect key="frame" x="0.0" y="66.5" width="275" height="56.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Major" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPC-R5-buK">
+                                        <rect key="frame" x="0.0" y="133" width="275" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Semester" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hzV-1H-hSy">
+                                        <rect key="frame" x="0.0" y="200" width="275" height="56.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sA-XH-pbn">
+                                        <rect key="frame" x="0.0" y="266.5" width="275" height="56.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Update Info"/>
+                                        <connections>
+                                            <action selector="signUp:" destination="eeD-r6-WlK" eventType="touchUpInside" id="8Cr-63-j3s"/>
+                                            <action selector="signUp:" destination="TVc-3y-iRG" eventType="touchUpInside" id="vNn-Pi-lWB"/>
+                                            <action selector="updateInfo:" destination="dhm-im-cUP" eventType="touchUpInside" id="LSt-g2-iv8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JKR-li-OBe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JKR-li-OBe" firstAttribute="trailing" secondItem="G8o-nb-5uB" secondAttribute="trailing" constant="50" id="77L-R8-dqy"/>
+                            <constraint firstItem="JKR-li-OBe" firstAttribute="bottom" secondItem="G8o-nb-5uB" secondAttribute="bottom" constant="150" id="Czu-hG-gUH"/>
+                            <constraint firstItem="G8o-nb-5uB" firstAttribute="top" secondItem="JKR-li-OBe" secondAttribute="top" constant="150" id="dgl-r8-6bf"/>
+                            <constraint firstItem="G8o-nb-5uB" firstAttribute="leading" secondItem="JKR-li-OBe" secondAttribute="leading" constant="50" id="oO5-R7-qQg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Profile" id="fBz-kY-F1w"/>
+                    <connections>
+                        <outlet property="lastname" destination="MY2-25-IPF" id="f6h-fb-QH2"/>
+                        <outlet property="major" destination="MPC-R5-buK" id="4JQ-QD-s1A"/>
+                        <outlet property="name" destination="QOJ-Kh-FWQ" id="Wpf-dt-W1b"/>
+                        <outlet property="semester" destination="hzV-1H-hSy" id="xJi-Uz-Y2v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S37-gc-PIy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
